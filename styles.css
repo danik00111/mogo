@@ -264,25 +264,23 @@
   display: flex;
 }
 
-input {
+.email {
   width: 230px;
   height: 40px;
   border: 1px solid #b6b6b6;
 }
-
-input::-moz-placeholder {
+.email::-moz-placeholder {
+  color: #b6b6b6;
   font-family: "Roboto";
   font-style: italic;
-  color: #b6b6b6;
 }
-
-input::placeholder {
+.email::placeholder {
+  color: #b6b6b6;
   font-family: "Roboto";
   font-style: italic;
-  color: #b6b6b6;
 }
 
-input[type=submit] {
+.submit {
   width: 150px;
   height: 40px;
   text-transform: uppercase;
@@ -290,4 +288,5 @@ input[type=submit] {
   background: #95e1d3;
   color: white;
   font-weight: bold;
+  border: none;
 }/*# sourceMappingURL=styles.css.map */
