@@ -292,19 +292,19 @@ $grayish: #b6b6b6;
   display: flex;
 }
 
-input {
+.email {
   width: 230px;
   height: 40px;
   border: 1px solid $grayish;
+
+  &::placeholder {
+    color: $grayish;
+    font-family: 'Roboto';
+    font-style: italic;
+  }
 }
 
-input::placeholder {
-  font-family: 'Roboto';
-  font-style: italic;
-  color: $grayish;
-}
-
-input[type="submit"] {
+.submit {
   width: 150px;
   height: 40px;
   text-transform: uppercase;
@@ -312,4 +312,5 @@ input[type="submit"] {
   background: $aqua;
   color: white;
   font-weight: bold;
+  border: none;
 }
