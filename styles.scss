@@ -38,6 +38,7 @@ $grayish: #b6b6b6;
   font-weight: 700;
   font-size: 30px;
   color: $aqua;
+  cursor: pointer;
 
   span {
     color: $salmon;
@@ -311,4 +312,40 @@ $grayish: #b6b6b6;
   border: none;
 }
 
-@media screen and (max-width:1200px) {}
+.header__menu-burger {
+  display: none;
+}
+
+
+@media screen and (max-width:625px) {
+  .header__menu-burger {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 30px;
+  }
+
+  .burger {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $aqua;
+
+    &:first-child {
+      top: 20%;
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+    }
+
+    &:last-child {
+      top: 80%;
+    }
+  }
+
+  .header__list {
+    display: none;
+  }
+}
