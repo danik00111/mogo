@@ -348,4 +348,23 @@ $grayish: #b6b6b6;
   .header__list {
     display: none;
   }
+
+  .header {
+    background: $salmon;
+    margin-top: 0;
+    height: 50px;
+    margin: auto 0;
+  }
+
+  .header__logo {
+    color: white;
+
+    span {
+      color: white;
+    }
+
+    &:hover {
+      color: $aqua;
+    }
+  }
 }

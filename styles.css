@@ -318,4 +318,19 @@
   .header__list {
     display: none;
   }
+  .header {
+    background: #f38181;
+    margin-top: 0;
+    height: 50px;
+    margin: auto 0;
+  }
+  .header__logo {
+    color: white;
+  }
+  .header__logo span {
+    color: white;
+  }
+  .header__logo:hover {
+    color: #95e1d3;
+  }
 }/*# sourceMappingURL=styles.css.map */
