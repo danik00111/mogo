@@ -199,11 +199,12 @@ $grayish: #b6b6b6;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 80px;
+  flex-wrap: wrap;
 }
 
 .img-wrap {
   position: relative;
+  margin-bottom: 80px;
 
   &:hover .shadow {
     opacity: 1;
@@ -309,3 +310,5 @@ $grayish: #b6b6b6;
   font-weight: bold;
   border: none;
 }
+
+@media screen and (max-width:1200px) {}
