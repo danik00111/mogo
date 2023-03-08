@@ -1,0 +1,1 @@
+# In commit messages, HTML:<int> refers to line <int> of HTML. Same with SCSS.
