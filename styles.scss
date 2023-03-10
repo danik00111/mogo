@@ -335,12 +335,13 @@ $grayish: #b6b6b6;
 
   .checkbox {
     display: inline-block;
+    cursor: pointer;
     top: 10%;
     right: 5%;
     z-index: 1;
     opacity: 0.25;
 
-    &:checked+.header__list {
+    &:checked~.header__list {
       display: block;
     }
   }

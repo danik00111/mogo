@@ -310,12 +310,13 @@
   }
   .checkbox {
     display: inline-block;
+    cursor: pointer;
     top: 10%;
     right: 5%;
     z-index: 1;
     opacity: 0.25;
   }
-  .checkbox:checked + .header__list {
+  .checkbox:checked ~ .header__list {
     display: block;
   }
   .burger {
