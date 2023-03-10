@@ -369,27 +369,28 @@ $grayish: #b6b6b6;
     }
   }
 
-
-
-  .burger,
-  .burger::before,
-  .burger::after {
-    content: '';
+  @mixin borgir {
     position: absolute;
     width: 100%;
     height: 2px;
     background: $salmon;
     display: block;
-    top: 5px;
   }
 
   .burger {
+    top: 5px;
+    @include borgir;
+
     &::before {
+      @include borgir;
       top: 8px;
+      content: '';
     }
 
     &::after {
+      @include borgir;
       top: 16px;
+      content: '';
     }
   }
 
