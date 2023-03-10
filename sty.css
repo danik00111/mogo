@@ -357,16 +357,43 @@
     top: 16px;
     content: "";
   }
+  .header__list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 20px;
+    background: #95e1d3;
+    box-shadow: 0 12px 8px #95e1d3;
+  }
+  .header__list li {
+    width: 100%;
+    margin: 15px 0;
+    border-bottom: 1px solid #95e1d3;
+    text-align: center;
+  }
+  #checkbox:checked ~ label span {
+    background: none;
+  }
+  #checkbox:checked ~ label span::before {
+    transform: rotate(45deg);
+    top: 5px;
+  }
+  #checkbox:checked ~ label span::after {
+    transform: rotate(-45deg);
+    top: 5px;
+  }
+  #checkbox:checked ~ .header__list {
+    display: flex;
+    flex-direction: column;
+  }
   .header__menu-burger {
     display: block;
     width: 30px;
     height: 30px;
     position: relative;
   }
-  .header__list {
-    display: none;
-  }
-  .header__list-item:hover {
+  .header__list-item {
     color: white;
   }
   .header__logo {
