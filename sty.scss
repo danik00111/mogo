@@ -372,18 +372,21 @@ $grayish: #b6b6b6;
   }
 
   .burger {
-    top: 5px;
+    transition: 250ms;
+    top: 7px;
     @include borgir;
 
     &::before {
+      transition: 250ms;
       @include borgir;
-      top: 8px;
+      top: 7px;
       content: '';
     }
 
     &::after {
+      transition: 250ms;
       @include borgir;
-      top: 16px;
+      top: 14px;
       content: '';
     }
   }
@@ -406,11 +409,12 @@ $grayish: #b6b6b6;
   }
 
   #checkbox:checked~label span {
-    background: none;
+    transform: rotate(45deg);
+
+    top: 5px;
 
     &::before {
-      transform: rotate(45deg);
-      top: 5px;
+      background: none;
     }
 
     &::after {
