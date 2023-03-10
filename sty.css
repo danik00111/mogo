@@ -349,6 +349,9 @@
     height: 2px;
     background: #f38181;
   }
+  .header__menu-burger {
+    display: block;
+  }
   .header__list {
     display: none;
   }
