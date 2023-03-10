@@ -21,6 +21,7 @@
 .header__nav {
   display: flex;
   justify-content: space-between;
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 20px;
@@ -292,6 +293,13 @@
   display: none;
 }
 
+.checkbox {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
 @media screen and (max-width: 625px) {
   .header__menu-burger {
     display: block;
@@ -299,6 +307,16 @@
     width: 30px;
     position: relative;
     margin-right: 30px;
+  }
+  .checkbox {
+    display: inline-block;
+    top: 10%;
+    right: 5%;
+    z-index: 1;
+    opacity: 0.25;
+  }
+  .checkbox:checked + .header__list {
+    display: block;
   }
   .burger {
     position: absolute;
