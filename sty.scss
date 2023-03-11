@@ -409,12 +409,11 @@ $grayish: #b6b6b6;
   }
 
   #checkbox:checked~label span {
-    transform: rotate(45deg);
+    background: none;
 
-    top: 5px;
-
-    &::before {
-      background: none;
+    &::before {§
+      transform: rotate(45deg);
+      top: 5px;
     }
 
     &::after {
