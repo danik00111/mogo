@@ -313,11 +313,6 @@ $grayish: #b6b6b6;
   border: none;
 }
 
-.header__menu-burger {
-  display: none;
-}
-
-// input[type="checkbox"]
 #checkbox,
 .header__menu-burger {
   display: none;
@@ -348,6 +343,10 @@ $grayish: #b6b6b6;
     height: 30px;
     position: relative;
     margin-right: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .checkbox {
@@ -411,7 +410,7 @@ $grayish: #b6b6b6;
   #checkbox:checked~label span {
     background: none;
 
-    &::before {§
+    &::before {
       transform: rotate(45deg);
       top: 5px;
     }

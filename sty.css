@@ -289,10 +289,6 @@
   border: none;
 }
 
-.header__menu-burger {
-  display: none;
-}
-
 #checkbox,
 .header__menu-burger {
   display: none;
@@ -319,6 +315,9 @@
     height: 30px;
     position: relative;
     margin-right: 30px;
+  }
+  .header__menu-burger:hover {
+    cursor: pointer;
   }
   .checkbox {
     display: inline-block;
